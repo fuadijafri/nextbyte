@@ -17,7 +17,7 @@ class Header extends Component {
         mode="horizontal"
       >
         <Menu.Item key="route1">
-          <Link to ='/all-in-food'>All in Food</Link>
+          <Link to ='/'>Chicken</Link>
         </Menu.Item>
       </Menu>
     )
