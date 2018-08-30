@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'antd'
 
-import CardNews from '../Component/CardNews'
+import CardMenu from '../Component/CardMenu'
 
 class Home extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      news: []
+      recipe: []
     }
   }
 
@@ -20,7 +20,7 @@ class Home extends Component {
       let data = res.recipes.map((d, i) => {
         return (
           <Col className="gutter-row" span={6} key={i} >
-            <CardNews
+            <CardMenu
             cover = {<img src={d.image_url} alt="" />}
             title = {d.title}
             recipeLink={d.f2f_url}
@@ -30,7 +30,7 @@ class Home extends Component {
       })
       
       this.setState({
-        news: data
+        recipe: data
       })
     })
 }
