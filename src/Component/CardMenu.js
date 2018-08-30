@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Card, Button } from 'antd';
 
-class Chicken extends Component {
+class CardMenu extends Component {
   render() {
     return (
       <Card 
@@ -20,4 +20,4 @@ class Chicken extends Component {
   }
 }
 
-export default Chicken
+export default CardMenu
